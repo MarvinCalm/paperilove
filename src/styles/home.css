@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+#home {
+   
+   min-height: calc(100vh - 55px);
+   padding-top: 80px;  /* Ajuste este valor de acordo com a altura do seu menu */
+   margin-top: -80px;  /* Valor negativo igual ao padding-top para compensar */
+   padding-bottom: 80px;
+   
+
+}
+
+
+
+#capa {
+   display: flex;
+   justify-content: center; /* Distribui a logo, descrição e botões horizontalmente */
+   align-items: center;            /* Alinha verticalmente os itens no centro */
+   padding: 30px;                  /* Adiciona espaço interno ao container */
+   padding-bottom: 5px;
+   gap: 25px;
+  
+}
+
+.logo-name {
+   max-width: 300px;               /* Tamanho da logo */
+   height: auto;  /* Mantém a proporção da imagem */
+   animation-name: animacao-opacidade-left;
+   animation-duration: 1.8s;
+   transition: transform 0.3s ease;
+   
+}
+
+.logo-name:hover {
+   transform: scale(1.1);
+}
+
+.description {
+   max-width: 750px;               /* Define a largura máxima da descrição */
+   margin-left: 20px;             /* Espaçamento entre a descrição e os botões */
+   color: #3392b5;
+   font-size: 1.1rem;
+   text-align: justify;
+   line-height: 1.5;
+   animation-name: animacao-opacidade-right;
+   animation-duration: 2.2s;
+   background-color: rgba(255, 228, 227, 0.7);
+   padding: 35px;
+   border-radius: 5px 55px 55px 5px;
+   
+   
+  
+}
+
+
+
+
+.description h3 {
+   color: #3392b5;
+
+}
+
+.description h4 {
+   color: #eb9d9c;
+
+}
+
+
+/* CAROLSEL inicio */
+.carousel {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   margin: 0 auto;
+   margin-top: 30px;
+   border-radius: 10px;
+   
+}
+
+.carousel-inner {
+   display: flex;
+   transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+   min-width: 100%;
+   transition: opacity 1s ease;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.carousel-control {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background-color: rgba(0, 0, 0, 0.1);
+   border: none;
+   border-radius: 80px;
+   color: #fff;
+   font-size: 1.7rem;
+   padding: 0.5rem 1rem;
+   cursor: pointer;
+   z-index: 1;
+}
+
+.prev {
+    left: 5px;
+}
+
+.next {
+    right: 5px;
+}
+
+.carousel-control:hover {
+   color: #3392b5;
+}
+
+/* CAROLSEL fim */
+
+
+@media screen and (max-width: 920px) {
+   #home {
+      min-height: 100%;
+      padding: 0px;
+      padding-top: 40px;
+      margin-bottom: 100px;
+   
+   }
+   
+   .logo-name {
+      display: none;
+   }
+   
+   #capa .description {
+      width: 450px;
+      box-shadow: none;
+      margin:0;
+      font-size: .9rem;
+      margin-top: 30px;
+      padding: 10px;
+      
+   }
+   .carousel-control {
+      display: none;
+   }
+   
+   .carousel {
+      width: 90%;
+   }
+   
+  
+   
+}
+
+
+
+
+
+
+
+
+

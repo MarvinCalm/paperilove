@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('header.css');
+@import url('home.css');
+@import url('portfolio.css');
+@import url('sobre.css');
+@import url('footer.css');
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+   background-color: #fff6f6;
+}
+
+html {
+   scroll-behavior: smooth;
+   box-sizing: border-box;
+}
+
+
+
+section {
+   padding: 28px 8%;
+}
+
+#buttons {
+   border: none;
+   display: flex;
+   gap: 15px; 
+   background-color: transparent;
+   
+   
+}
+
+
+
+#buttons .btn-default {
+   border: none;
+   background-color: transparent;
+   padding: 10px 14px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: transform 0.3s ease;
+   text-decoration: none;
+   font-size: 2rem;
+   animation-name: animacao-btn-name;
+   animation-duration: 2s;   
+   
+   
+}
+
+#buttons .btn-default:hover {
+   background-color: transparent;
+   transform: scale(1.1);
+}
+
+#buttons-mobile .btn-default {
+   border: none;
+   background-color: transparent;
+   padding: 10px 14px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: transform 0.5s ease;
+   text-decoration: none;
+   font-size: 2rem;
+   animation-name: animacao-btn-name;
+   animation-duration: 2s;   
+   
+   
+}
+
+#buttons-mobile {
+   border: none;
+   display: flex;
+   gap: 15px; 
+   background-color: transparent;
+   margin-bottom: 20px;
+   
+}
+
+#buttons-mobile .btn-default:hover {
+   background-color: transparent;
+   transform: scale(1.2);
+}
+
+.btn-name {
+   text-decoration: none;
+   color: #eb9d9c;
+   font-size: 2rem;
+   transition: color 0.2s ease;
+
+   
+}
+
+.btn-name:hover {
+   text-decoration: none;
+   color: #3392b5;
+   font-size: 2rem;
+   
+}
+
+
+
+
+@keyframes animacao-btn-name {
+   0% {opacity: 0; transform: translate(0px,0px)}
+   50% {opacity: 0; transform: translate(0px,25px)}
+   100%{opacity: 1; transform: translate(0px,0px)}
+}
+   
+
+
+.section-subtitle {
+   Color: #3392b5;
+   font-size: 25px;
+   font-family: "Kalam", cursive;
+   font-weight: 700;
+   font-style: normal;
+}
+

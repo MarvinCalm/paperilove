@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.video-container {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #3392b5;
+  background-color: #ffe4e3;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+video {
+  display: block;
+  width: 100%; /* Preenche 100% da largura do contêiner */
+  height: 100%; /* Preenche 100% da altura do contêiner */
+  object-fit: cover; /* Cobre o contêiner sem deixar o vídeo sair */
+  border-radius: 10px; /* Aplica bordas arredondadas no vídeo também */
+}
+
+
+
+#videoPlayer {
+   width: 250px;
+   height: 300px;
+   border-radius: 50px;
+   overflow: hidden;
+   
+}
+
+
