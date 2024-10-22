@@ -66,6 +66,22 @@
 
 }
 
+.description h5 {
+   color: #6daec7;
+   margin-bottom: 10px;
+   letter-spacing: 2px;
+
+}
+
+
+.profile {
+   display: block;
+   gap: 1rem;
+   align-content: center;
+   flex-wrap: wrap;
+   margin-bottom: 10px;
+}
+
 
 /* CAROLSEL inicio */
 .carousel {

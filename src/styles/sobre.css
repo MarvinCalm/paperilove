@@ -2,38 +2,10 @@
 
 
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
+#sobre {
+   margin: 0;
+   padding: 0;
+   min-height: 100vh;
+   font-family: "Poppins", sans-serif;
+   box-sizing: border-box;
 }
-
-.video-container {
-  margin: 10px;
-  padding: 10px;
-  border: 2px solid #3392b5;
-  background-color: #ffe4e3;
-  border-radius: 30px;
-  overflow: hidden;
-}
-
-video {
-  display: block;
-  width: 100%; /* Preenche 100% da largura do contêiner */
-  height: 100%; /* Preenche 100% da altura do contêiner */
-  object-fit: cover; /* Cobre o contêiner sem deixar o vídeo sair */
-  border-radius: 10px; /* Aplica bordas arredondadas no vídeo também */
-}
-
-
-
-#videoPlayer {
-   width: 250px;
-   height: 300px;
-   border-radius: 50px;
-   overflow: hidden;
-   
-}
-
-
